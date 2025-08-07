@@ -107,9 +107,11 @@ Total: ~$176/month (Post-migration)
 Approx Initial Cost of Cosmos DB (600 GB):
 $200–$212/month.
 
-Conclusion:
+# Conclusion:
 After Migration: 
 1st month cost will be less by ~25-35GB
 1st month onwards cost will get reduced by $150/month (As ADF won't be part of process)
 
 
+# GPT Prompt Link
+https://chatgpt.com/share/6894892c-2130-800d-a240-285183f35983
