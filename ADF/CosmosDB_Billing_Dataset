@@ -1,0 +1,13 @@
+{
+  "name": "CosmosDB_Billing_Dataset",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "CosmosDB_Billing_LinkedService",
+      "type": "LinkedServiceReference"
+    },
+    "type": "CosmosDbSqlApiSource",
+    "typeProperties": {
+      "collectionName": "Records"
+    }
+  }
+}

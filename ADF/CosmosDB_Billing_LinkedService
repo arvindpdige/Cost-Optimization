@@ -1,0 +1,12 @@
+{
+  "name": "CosmosDB_Billing_LinkedService",
+  "properties": {
+    "type": "CosmosDb",
+    "typeProperties": {
+      "accountEndpoint": "<cosmos-db-endpoint>",
+      "database": "BillingDB",
+      "collection": "Records",
+      "authenticationType": "ManagedIdentity"
+    }
+  }
+}

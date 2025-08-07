@@ -114,4 +114,4 @@ After Migration:
 
 
 # GPT Prompt Link
-https://chatgpt.com/share/6894892c-2130-800d-a240-285183f35983
+https://chatgpt.com/share/68948cc0-c148-800d-ba7c-ff33611bbbfe

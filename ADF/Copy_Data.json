@@ -1,0 +1,49 @@
+{
+  "name": "Copy_CosmosDB_to_ADLS",
+  "properties": {
+    "activities": [
+      {
+        "name": "CopyBillingRecords",
+        "type": "Copy",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "7.00:00:00",
+          "retry": 1,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "source": {
+            "type": "CosmosDbSqlSource",
+            "sqlQuery": "SELECT * FROM c WHERE c._ts < @archivalTimestamp"
+          },
+          "sink": {
+            "type": "JsonSink",
+            "storeSettings": {
+              "type": "AzureBlobStorageWriteSettings",
+              "container": "archived-data",
+              "blobPrefix": "cosmosdb/records/"
+            },
+            "formatSettings": {
+              "type": "JsonWriteSettings"
+            }
+          }
+        },
+        "inputs": [
+          {
+            "referenceName": "CosmosDB_Billing_Dataset",
+            "type": "DatasetReference"
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "BlobStorage_OutputDataset",
+            "type": "DatasetReference"
+          }
+        ]
+      }
+    ],
+    "annotations": []
+  }
+}

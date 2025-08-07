@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "COSMOS_ENDPOINT": "<your-cosmos-endpoint>",
+    "COSMOS_KEY": "<your-cosmos-key>",
+    "COSMOS_DB": "<your-db-name>",
+    "COSMOS_CONTAINER": "<your-container-name>",
+    "STORAGE_ACCOUNT_NAME": "<your-storage-name>",
+    "STORAGE_ACCOUNT_KEY": "<your-storage-key>",
+    "FILESYSTEM_NAME": "<your-filesystem>"
+  }
+}
